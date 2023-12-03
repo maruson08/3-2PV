@@ -1,1 +1,3 @@
 # 3-2PV
+## 서비스 준비중...
+### 문의: maruson08@naver.com or @dev_maruson
