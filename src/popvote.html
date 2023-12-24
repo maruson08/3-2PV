@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>인기투표</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            @font-face {
+                font-family: 'JalnanGothic';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            body{
+                font-family: JalnanGothic;
+                font-size: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text-center animate__animated animate__fadeInUp">
+            <h1 class="text-center" style="margin-top:47rem; font-size: 200px; font-weight: 600;">인기투표</h1>
+            <div class="spinner-border" style="height: 5rem;width: 5rem;" role="status">
+                <span class="visually-hidden">Loading...</span> 
+            </div>
+        </div>
+        <script>
+            setTimeout(() => {
+                document.body.innerHTML = `<nav class="navbar fixed-top bg-white" style="font-size: 2rem;">
+            <div class="container-fluid">
+                <a style="font-size: 4rem; margin-top: 3%; padding-left: 3%;" class="navbar-brand" href="#">인기투표</a>
+                <button style="width: 13rem;height: 6rem;border: none;background-color: white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span style="width: 3rem;" class="navbar-toggler-icon"></span>
+                </button>
+                <div style="width: 50rem; font-size: 2.5rem;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border border-bottom">
+                    <h5 style="font-size: 4rem;" class="offcanvas-title" id="offcanvasNavbarLabel">메뉴</h5>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">투표하기</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <div class="card text-center" style='border:none;margin: 3rem;margin-top: 15rem;font-size: 3.5rem;'>
+            <div class="card-header">
+                깜짝 이벤트
+            </div>
+            <div class="card-body">
+                <p class="card-text">현재 S, A등급에 있는 5명에 대한 이야기를 자유롭게 등록해주세요.<br>누가 등록했는지는 익명으로 처리되어서 개발자만 볼 수 있어요.</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                21분 전
+            </div>
+            <br>
+            <div class="card-header">
+                투표결과
+            </div>
+            <div class="card-body">
+                <p class="card-text">S : 소은, 우현<br>A : 친구b, 친구c, $$$<br>B : %%%, ^^^, &&&, +++<br>C : 세아, bbb, ccc<br><br>우리 학교에서 가장 예쁜 사람은? 소은 82%, $$$ 9%, 그 외 9%<br>우리 학교에서 가장 별로인 사람은? snrn 45%, snrnsrk 45%, quffh 8%, 그 외 2%</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                1일 전
+            </div>
+            <br>
+            <div class="card-header">
+                공지
+            </div>
+            <div class="card-body">
+                <p class="card-text">- S등급 이외의 등급(A, B, C)이 추가되었어요!<br>- 주관식 투표 기능도 추가되었어요!<br>- 테스트를 위해 오늘 오후 4시까지 투표를 진행하고 바로 결과를 발표해요. 많이 참여해주세요!</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                1일 전
+            </div>
+            <br>
+            <div class="card-header">
+                첫 공지
+            </div>
+            <div class="card-body">
+                <p class="card-text">오늘 자정까지 투표를 진행해요!</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                2일 전
+            </div>
+        </div>
+            `
+            }, 3000);
+            setTimeout(() => {
+                document.body.innerHTML = `<nav class="navbar fixed-top bg-white" style="font-size: 2rem;">
+            <div class="container-fluid">
+                <a style="font-size: 4rem; margin-top: 3%; padding-left: 3%;" class="navbar-brand" href="#">인기투표</a>
+                <button style="width: 13rem;height: 6rem;border: none;background-color: white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span style="width: 3rem;" class="navbar-toggler-icon"></span>
+                </button>
+                <div style="width: 50rem; font-size: 2.5rem;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border border-bottom">
+                    <h5 style="font-size: 4rem;" class="offcanvas-title" id="offcanvasNavbarLabel">메뉴</h5>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">투표하기</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <div class="card text-center" style='border:none;margin: 3rem;margin-top: 15rem;font-size: 3.5rem;'>
+            <div class="card-header">
+                <a href='wooriban.3-2.p-e.kr' style='text-decoration:none; color:black;'>S등급 박소은에 대하여</a>
+            </div>
+            <br>
+            <div class="card-header">
+                S급 완전 정리
+            </div>
+            <br>
+            <div class="card-header">
+                박소은 완전 예쁨
+            </div>
+            <br>
+            <div class="card-header">
+                깜짝 이벤트
+            </div>
+            <div class="card-body">
+                <p class="card-text">현재 S, A등급에 있는 5명에 대한 이야기를 자유롭게 등록해주세요.<br>누가 등록했는지는 익명으로 처리되어서 개발자만 볼 수 있어요.</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                21분 전
+            </div>
+            <br>
+            <div class="card-header">
+                투표결과
+            </div>
+            <div class="card-body">
+                <p class="card-text">S : 소은, 우현<br>A : 친구b, 친구c, $$$<br>B : %%%, ^^^, &&&, +++<br>C : 세아, bbb, ccc<br><br>우리 학교에서 가장 예쁜 사람은? 소은 82%, $$$ 9%, 그 외 9%<br>우리 학교에서 가장 별로인 사람은? snrn 45%, snrnsrk 45%, quffh 8%, 그 외 2%</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                1일 전
+            </div>
+            <br>
+            <div class="card-header">
+                공지
+            </div>
+            <div class="card-body">
+                <p class="card-text">- S등급 이외의 등급(A, B, C)이 추가되었어요!<br>- 주관식 투표 기능도 추가되었어요!<br>- 테스트를 위해 오늘 오후 4시까지 투표를 진행하고 바로 결과를 발표해요. 많이 참여해주세요!</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                1일 전
+            </div>
+            <br>
+            <div class="card-header">
+                첫 공지
+            </div>
+            <div class="card-body">
+                <p class="card-text">오늘 자정까지 투표를 진행해요!</p>
+                </div>
+            <div class="card-footer text-body-secondary" style='font-size: 1.5rem'>
+                2일 전
+            </div>
+        </div>
+            `
+            }, 5000);
+        </script>
+        
+    </body>
+</html>

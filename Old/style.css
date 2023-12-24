@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'GoryeongStrawberry';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btn-nav{
+    margin: 5%;
+    background-color: #FF0000;
+    color: #282828;
+}
+body{
+    background-color: white;
+    font-family: GoryeongStrawberry;
+}
+h1{
+    
+    color: #282828; 
+}
+#container{
+    display: grid;
+    grid-template-columns:2fr;
+}
+.card{
+    display: grid;
+    margin: .3rem;
+    grid-template-rows: 3fr 1fr;
+    padding: 1rem;
+    padding-bottom: 0;
+    width: 40%;
+    margin: 30%;
+    margin-top: 0;
+    margin-bottom: 5%;
+
+}
+
+img{
+    height: 150px;
+}
+
